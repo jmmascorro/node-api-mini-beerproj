@@ -10,4 +10,6 @@ router.get("/:id", (req, res) => getBeerById(req, res));
 
 router.post("/", (req, res) =>  addNewBeer(req, res));
 
+// router.delete("/:id", (req, res) => deleteBeer(req, res));
+
 export default router;

@@ -22,6 +22,7 @@ router.get("/:id", function (req, res) {
 });
 router.post("/", function (req, res) {
   return (0, _beerController.addNewBeer)(req, res);
-});
+}); // router.delete("/:id", (req, res) => deleteBeer(req, res));
+
 var _default = router;
 exports["default"] = _default;

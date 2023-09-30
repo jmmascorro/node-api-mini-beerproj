@@ -38,3 +38,12 @@ export const addNewBeer = (req, res) => {
         console.log(err)
     })
 }
+
+// export const deleteBeer = (req, res) => {
+//     const id = parseInt(req.params.id);
+//     Beer.destroy({
+//         where: {id: id}
+//     }).then(() => {
+//     res.status(204).end();
+//     });
+// }

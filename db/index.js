@@ -1,6 +1,6 @@
 import  { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize("beers_db", "root", "password", {
-    dialect: "mysql",
-    host: "localhost"
+export const sequelize = new Sequelize("postgres", "postgres", "Olenjude2020!", {
+    dialect: "postgres",
+    host: "db.vxinmbvlspqhcdusriua.supabase.co"
 });
