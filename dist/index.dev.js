@@ -36,5 +36,5 @@ app.listen(port, function (req, res) {
   console.log("Server is running on port " + port);
 });
 app.get('/api', function (req, res) {
-  res.json("welcome to my API");
+  res.send("welcome to my API");
 });

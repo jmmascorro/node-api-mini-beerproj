@@ -37,6 +37,6 @@ app.listen(port, (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-    res.json("welcome to my API");
+    res.send("welcome to my API");
 });
 
