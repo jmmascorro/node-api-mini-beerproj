@@ -18,8 +18,7 @@
     "mysql2": "^2.3.3",
     "pg": "^8.11.3",
     "postgres": "^3.3.5",
-    "sequelize": "^6.21.4",
-    "nodemon": "^2.0.22"
+    "sequelize": "^6.21.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
