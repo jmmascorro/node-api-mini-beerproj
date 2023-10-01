@@ -13,7 +13,7 @@ var _index = require("./db/index.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
-var port = 5432;
+var port = process.env.PORT | 5432;
 
 _index.sequelize.sync().then(function (result) {
   console.log(result);

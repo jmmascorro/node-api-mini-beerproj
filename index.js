@@ -6,7 +6,7 @@ import { sequelize } from "./db/index.js";
 
 const app = express();
 
-const port = 5432;
+const port = process.env.PORT | 5432;
 
 sequelize.sync()
 .then(result => {
