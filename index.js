@@ -6,15 +6,16 @@ import { sequelize } from "./db/index.js";
 
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5432;
 
 sequelize.sync()
 .then(result => {
-  console.log(result)
+    console.log(`result: `, result);
 })
 .catch(err => {
-  console.log(err)
-});
+    console.log(`err: `, err)
+})
+
 
 app.use(bodyParser.json());
 

@@ -13,12 +13,12 @@ var _index = require("./db/index.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5432;
 
 _index.sequelize.sync().then(function (result) {
-  console.log(result);
+  console.log("result: ", result);
 })["catch"](function (err) {
-  console.log(err);
+  console.log("err: ", err);
 });
 
 app.use(_bodyParser["default"].json());
